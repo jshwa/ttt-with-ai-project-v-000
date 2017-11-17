@@ -18,10 +18,6 @@ class Game
     draw? || won?
   end
 
-  # def draw?
-  #   true if board.full? && !won?
-  # end
-
   def winner
     board.cells[won?[0]] if won?
   end
