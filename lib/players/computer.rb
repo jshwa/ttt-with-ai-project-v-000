@@ -3,7 +3,6 @@ require 'pry'
 module Players
   class Computer < Player
     include Rules
-    attr_accessor :move
 
     def move(board)
       puts ""
@@ -28,10 +27,6 @@ module Players
       else
         highest_score = scores.max_by{|k,v|v}[1]
       end
-    end
-
-    def board_full?(board)
-      board.cells.detect {|i| i == " "} ? false : true
     end
 
     def possible_moves(board)
