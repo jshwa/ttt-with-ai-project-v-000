@@ -48,7 +48,7 @@ module Players
     # end
 
     def draw?(board)
-      board_full?(board) && !game_won?(board)
+      board_full?(board) && !won?(board)
     end
 
     def board_full?(board)
