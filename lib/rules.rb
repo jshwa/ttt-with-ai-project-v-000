@@ -10,7 +10,7 @@ module Rules
     [0,4,8],
     [6,4,2]]
 
-  def won?(board = self)
+  def won?(board = self.board)
     WIN_COMBINATIONS.detect do |comb|
       array = [board.cells[comb[0]], board.cells[comb[1]], board.cells[comb[2]]]
       array == ["X", "X", "X"] || array == ["O", "O", "O"]
