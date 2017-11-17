@@ -17,4 +17,8 @@ module Rules
     end
   end
 
+  def draw?(board = self.board)
+    true if board.full? && !won?
+  end
+
 end
