@@ -30,9 +30,9 @@ module Players
       end
     end
 
-    def draw?(board)
-      board_full?(board) && !won?(board)
-    end
+    # def draw?(board)
+    #   board_full?(board) && !won?(board)
+    # end
 
     def board_full?(board)
       board.cells.detect {|i| i == " "} ? false : true
